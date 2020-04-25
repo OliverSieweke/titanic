@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev:  19.10b0
+    hooks:
+      - id: black
+  - repo: https://github.com/timothycrosley/isort
+    rev:  4.3.21-2
+    hooks:
+      - id: isort
+        args: [--check-only]
+        additional_dependencies:
+          - toml
+  - repo: https://github.com/myint/docformatter
+    rev:  v1.3.1
+    hooks:
+      - id: docformatter
+        args: [--in-place, --wrap-summaries=80, --wrap-descriptions=72]
+  - repo: https://github.com/OliverSieweke/sphinx.git
+    rev: 3.x
+    hooks:
+      - id: docs
+        args: [-W, ./docs/source, ./docs/build]
+        additional_dependencies:
+          - sphinx_rtd_theme
+        always_run: true
+        files: ".^"
