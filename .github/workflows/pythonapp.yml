@@ -15,8 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Kaggle Graph Actions
-    uses: OliverSieweke/kaggle-graph@v0.1.0
-    with:
-    # Competition ID
-    KAGGLE_COMPETITION_ID: titanic 
+      - name: Kaggle Graph Actions
+        uses: OliverSieweke/kaggle-graph@v0.1.0
+        with:
+          COMPETITION_ID: titanic 
