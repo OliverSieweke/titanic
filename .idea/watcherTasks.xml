@@ -62,7 +62,7 @@
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="--in-place --wrap-summaries=80 --wrap-descriptions=12 $FilePath$" />
+      <option name="arguments" value="--in-place --wrap-summaries=80 --wrap-descriptions=72 $FilePath$" />
       <option name="checkSyntaxErrors" value="false" />
       <option name="description" />
       <option name="exitCodeBehavior" value="NEVER" />
