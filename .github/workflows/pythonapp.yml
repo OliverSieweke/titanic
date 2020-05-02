@@ -17,5 +17,5 @@ jobs:
     steps:
       - name: Kaggle Graph Actions
         uses: OliverSieweke/kaggle-graph@v0.1.0
-        with:
+        env:
           KAGGLE_COMPETITION_ID: titanic 
