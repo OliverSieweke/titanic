@@ -19,3 +19,4 @@ jobs:
         uses: OliverSieweke/kaggle-graph@v0.1.2
         env:
           KAGGLE_COMPETITION_ID: titanic 
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
