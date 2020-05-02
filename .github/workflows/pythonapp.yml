@@ -18,4 +18,4 @@ jobs:
       - name: Kaggle Graph Actions
         uses: OliverSieweke/kaggle-graph@v0.1.0
         with:
-          COMPETITION_ID: titanic 
+          KAGGLE_COMPETITION_ID: titanic 
