@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Kaggle Graph Actions
-        uses: OliverSieweke/kaggle-graph@0.1.5
+        uses: OliverSieweke/kaggle-graph@0.1.6
         env:
           KAGGLE_COMPETITION_ID: titanic 
           KAGGLE_USERNAME: oliversieweke
@@ -28,4 +28,3 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
           commit_message: create kaggle graph
-          branch: test 
