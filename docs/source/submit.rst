@@ -1,0 +1,2 @@
+.. automodule:: titanic.submit
+    :members:

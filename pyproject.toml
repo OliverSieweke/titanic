@@ -44,7 +44,7 @@ use_parentheses='True'
 #force_grid_wrap    #Would override mult-line_output
 # Sections ------------------
 default_section="THIRDPARTY"
-known_datascience=['pandas', 'numpy', 'scipy']
+known_datascience=['pandas', 'numpy', 'scipy', 'sklearn']
 import_heading_stdlib="Standard Library ---------------------------------------------------------------------"
 import_heading_thirdparty="Third Party --------------------------------------------------------------------------"
 import_heading_datascience="Data Science"
