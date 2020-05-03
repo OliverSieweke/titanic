@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+     
       - name: Kaggle Graph Actions
         uses: OliverSieweke/kaggle-graph@v0.1.36
         env:
@@ -23,7 +23,7 @@ jobs:
           KAGGLE_USERNAME: oliversieweke
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
       
-      
+      - uses: actions/checkout@v2
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
