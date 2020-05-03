@@ -13,11 +13,12 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
       - name: Kaggle Graph Generation
-        uses: OliverSieweke/kaggle-graph@v0.1.42
+        uses: OliverSieweke/kaggle-graph@v0.1.44
         env:
-          KAGGLE_COMPETITION_ID: titanic 
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME}}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        with: 
+          KAGGLE_COMPETITION_ID: titanic
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
