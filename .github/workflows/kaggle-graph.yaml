@@ -15,7 +15,7 @@ jobs:
       - name: Kaggle Graph Generation
         uses: OliverSieweke/kaggle-graph@v0.1.44
         env:
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME}}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         with: 
           KAGGLE_COMPETITION_ID: titanic
