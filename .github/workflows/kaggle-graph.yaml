@@ -13,7 +13,7 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
       - name: Kaggle Graph Generation
-        uses: OliverSieweke/kaggle-graph@v0.1.48
+        uses: OliverSieweke/kaggle-graph@v0.1.49
         env:
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         with: 
