@@ -14,7 +14,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Kaggle Graph Generation
         uses: OliverSieweke/kaggle-graph@v0.1.51
-        
         env:
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         with: 
@@ -23,4 +22,4 @@ jobs:
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
-          commit_message: Automatic Kaggle submissions graph generation
+          commit_message: Automatic Kaggle graph generation
