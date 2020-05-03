@@ -16,9 +16,9 @@ jobs:
         uses: OliverSieweke/kaggle-graph@v0.1.44
         env:
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
         with: 
           KAGGLE_COMPETITION_ID: titanic
+          KAGGLE_USERNAME: oliversieweke
       - name: Git Auto Commit
         uses: stefanzweifel/git-auto-commit-action@v4.1.6
         with:
