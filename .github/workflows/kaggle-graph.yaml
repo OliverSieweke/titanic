@@ -1,1 +1,23 @@
+name: Kaggle Graph Generation
 
+on:
+  push:
+    branches: [ test ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Kaggle Graph Generation
+        uses: OliverSieweke/kaggle-graph@v0.1.42
+        env:
+          KAGGLE_COMPETITION_ID: titanic 
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME}}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.1.6
+        with:
+          commit_message: create kaggle graph
