@@ -2,9 +2,9 @@ name: Kaggle Graph Generation
 
 on:
   push:
-    branches: [ test ]
-  pull_request:
-    branches: [ master ]
+    branches: [ test, master ]
+  schedule:
+    - cron:  '0,30 * * * *'
 
 jobs:
   build:
