@@ -14,9 +14,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Kaggle Graph Generation
         uses: OliverSieweke/kaggle-graph@v0.1.52
-        env:
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         with: 
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
           KAGGLE_USERNAME: oliversieweke
           KAGGLE_COMPETITION_ID: titanic
       - name: Git Auto Commit
