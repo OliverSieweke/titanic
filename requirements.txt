@@ -2,4 +2,4 @@ jupyter==1.0.0
 kaggle==1.5.6
 python-dotenv==0.13.0
 pandas==1.0.3
-scikit-learn==0.22.2.post1
+scikit-learn==0.24.1
